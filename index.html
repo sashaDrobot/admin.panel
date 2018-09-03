@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="wrapper">
+<div id="app" class="wrapper">
     <div class="sidebar">
         <div class="logo">
             <a class="navbar-brand" href="#">
@@ -22,7 +22,7 @@
         </div>
         <ul class="nav">
             <li class="nav-profile py-4">
-                <div class="profile">
+                <a href="#" class="profile">
                     <div class="profile-image">
                         <img src="http://www.bootstrapdash.com/demo/star-admin-vue/static/img/face4.d5afaa6.jpg"
                              alt="profile">
@@ -32,7 +32,7 @@
                         <p class="designation">Backend developer</p>
                         <span class="badge badge-primary mx-auto mt-3">Online</span>
                     </div>
-                </div>
+                </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" href="#"><i class="fas fa-home"></i>Dashboard</a>
@@ -54,6 +54,9 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fas fa-trash-alt"></i>Trash</a>
+            </li>
+            <li class="nav-item d-lg-none d-md-block">
+                <a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i>Logout</a>
             </li>
         </ul>
     </div>
@@ -92,6 +95,7 @@
             </div>
         </nav>
         <div class="content-wrapper">
+
             <section class="dashboard">
                 <div class="row">
                     <div class="info-card bottom-margin col-xl-3 col-lg-3 col-md-3 col-sm-6 d-flex align-items-stretch justify-content-stretch">
@@ -217,6 +221,7 @@
                     </div>
                 </div>
             </section>
+
             <footer class="footer">
                 <div class="container-fluid clearfix">
                     <span class="float-none float-sm-right d-block mt-1 mt-sm-0">
